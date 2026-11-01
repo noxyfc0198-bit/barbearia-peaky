@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-black text-white; font-family: Inter, system-ui, sans-serif; }
+.btn-ouro { @apply w-full rounded-full bg-ouro px-6 py-4 font-semibold text-black active:scale-95 transition disabled:opacity-50; }
+.btn-borda { @apply w-full rounded-full border border-ouro px-6 py-4 font-semibold text-ouro active:scale-95 transition; }
+.campo { @apply w-full rounded-xl border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none focus:border-ouro; }
+
+@keyframes andar { from { transform: translateX(-20vw); } to { transform: translateX(120vw); } }
+@keyframes cortar { 0%,100% { transform: rotate(-12deg); } 50% { transform: rotate(12deg); } }
+@media (prefers-reduced-motion: reduce) { .anima { animation: none !important; } }
+
+/* Cena da barbearia: só transform e opacity, leve para celulares Android */
+@keyframes entra { 0% { transform: translateX(-40px); opacity: 0; } 8% { opacity: 1; } 82% { transform: translateX(190px); opacity: 1; } 100% { transform: translateX(204px); opacity: 0; } }
+@keyframes sai { 0% { transform: translateX(194px); opacity: 0; } 14% { opacity: 1; } 100% { transform: translateX(450px); opacity: 1; } }
+@keyframes braco { 0%, 100% { transform: rotate(-28deg); } 50% { transform: rotate(14deg); } }
+@keyframes passo { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@keyframes luz { 0%, 100% { opacity: .55; } 50% { opacity: .95; } }
+@keyframes folheia { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(6deg); } }
+@keyframes varre { 0% { transform: translateX(0); } 100% { transform: translateX(560px); } }

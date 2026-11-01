@@ -1,0 +1,9 @@
+# Usado pelo Supabase CLI. Pelo painel web, desligue "Verify JWT" nas 3 funções.
+# Motivo: a chave publicável (sb_publishable_...) não é um JWT. Cada função já faz a própria
+# verificação (código secreto do cliente, login do barbeiro ou assinatura do Mercado Pago).
+[functions.criar-cobranca-pix]
+verify_jwt = false
+[functions.webhook-pix]
+verify_jwt = false
+[functions.salvar-credenciais-pix]
+verify_jwt = false

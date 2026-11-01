@@ -1,0 +1,9 @@
+VÍDEO DE FUNDO (pessoas reais)
+
+Coloque aqui um arquivo chamado  barbearia.mp4  (vertical ou horizontal, 5 a 15 s, sem som,
+até ~3 MB, H.264). O app toca em loop, sem som e pausa quando a tela some.
+Sem esse arquivo o app mostra o salão sem pessoas.
+
+Onde achar vídeo realista gratuito (confira a licença de cada um):
+  pexels.com/videos  e  pixabay.com/videos  -> pesquise "barbershop" ou "barber haircut"
+Para reduzir o tamanho no celular, use um app de compressão de vídeo (720p, 24 fps).
